@@ -1,0 +1,219 @@
+/* Calendar Component Styles */
+.calendar-container {
+  padding: 20px;
+}
+
+.period-slot {
+  min-height: 80px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.period-slot:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.period-slot .btn {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.period-slot:hover .btn {
+  opacity: 1;
+}
+
+/* Error Container Styles */
+.calendar-error-container {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-error-container .alert {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: none;
+}
+
+.calendar-error-container .btn {
+  margin: 5px;
+}
+
+/* Modal Styles */
+.modal.show {
+  display: block !important;
+}
+
+.modal-backdrop {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Table Styles */
+.table th {
+  background-color: #343a40;
+  color: white;
+  border-color: #454d55;
+}
+
+.table td {
+  vertical-align: middle;
+  border-color: #dee2e6;
+}
+
+/* Time Slot Styles */
+.time-slot {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  text-align: center;
+  border-right: 2px solid #dee2e6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 10px;
+  }
+  
+  .table-responsive {
+    font-size: 12px;
+  }
+  
+  .period-slot {
+    min-height: 60px;
+    padding: 8px !important;
+  }
+  
+  .period-slot .btn {
+    padding: 2px 6px;
+    font-size: 10px;
+  }
+  
+  .calendar-error-container .btn {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Loading and Error States */
+.calendar-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.calendar-error {
+  padding: 20px;
+  text-align: center;
+  color: #dc3545;
+}
+
+/* Quick Actions */
+.quick-actions {
+  margin-bottom: 20px;
+}
+
+.quick-actions .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Form Styles */
+.form-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-select, .form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+.form-select:focus, .form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Badge Styles */
+.badge {
+  font-size: 0.75em;
+  padding: 0.35em 0.65em;
+}
+
+/* Icon Styles */
+.material-symbols-outlined {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Card Enhancements */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: none;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+/* Button Enhancements */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Table Enhancements */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead th {
+  border-top: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Status Indicators */
+.status-active {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.status-inactive {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  border-color: #ffeaa7;
+  color: #856404;
+}
